@@ -1,0 +1,8 @@
+#Project Description
+
+My solution involves parsing through each XML file, getting the bounds of each node, and creating a highlighted box at the corresponding bounds on the PNG.
+To parse through the XML files, I use a java package called "com.mkyong.xml.dom" which creates a hierarchy of the XML information. Using this hierarchy, I 
+can identify which nodes are leaf nodes. Once these are identified, I add their boundary coordinates to a master list. These bounds are converted from strings
+to an array of integer values which are used when drawing on the PNG. Then, using the java.awt.Graphics2D package, I read the image corresponding to the 
+current XML file. Using the list of boundary coordinates, I draw yellow boxes around the GUI leaf components and output the new image into the output folder. 
+I take an iterative approach to altering the files which allows me to identify potentially corrupt files such as the first one.
