@@ -1,4 +1,4 @@
-#Project Description
+# Project Description
 
 My solution involves parsing through each XML file, getting the bounds of each node, and creating a highlighted box at the corresponding bounds on the PNG.
 To parse through the XML files, I use a java package called "com.mkyong.xml.dom" which creates a hierarchy of the XML information. Using this hierarchy, I 
